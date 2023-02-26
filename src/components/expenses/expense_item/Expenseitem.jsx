@@ -7,13 +7,7 @@ const ExpenseItem = (props) => {
     amount = 0,
     date = new Date()
    } = props;
-
-
-
-
-
-
-    return(
+   return(
     <div className="expense-item">
         <ExpenseDate date={date}/>
            <div className="expense-item__description">
