@@ -1,26 +1,17 @@
 import React from "react";
-
+import ExpenseForm from "./expense_form/Expenseform";
+import "./NewExpense.css";
 const NewExpense = () => {
+    const onSave=(new_expense={})=>{
+        const expense={
+            ...new_expense,
+            id:Math.random().toString()
+        }
+        console.log(expense);
+    }
     return (
-    <div>
-       <form action="">
-        <div>
-            <label htmlFor="title">Title</label>
-            <input type="text" id="title" name="expense_title" />
-        </div>
-        <div>
-            <label htmlFor="amount">Amount</label>
-            <input type="number" id="amount" name="expense_amount" min="0"/>
-        </div>
-        <div>
-            <label htmlFor="date">Date</label>
-            <input type="date" id="date" name="expense_date"/>
-        </div>
-         <div>
-            <button type="submit">Add Expense</button>
-            <button>Cancel</button>
-        </div>
-       </form>
+    <div className="new-expense">
+       <ExpenseForm onFormSubmit={onSave} />
     </div>
     );
 }

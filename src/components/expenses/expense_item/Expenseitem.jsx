@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import ExpenseDate from "../expense_date/ExpenseDate";
 import "./ExpenseItem.css";
 const ExpenseItem = (props) => {
