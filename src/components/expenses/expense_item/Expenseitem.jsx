@@ -1,12 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import ExpenseDate from "../expense_date/ExpenseDate";
-import "./expenseitem.css";
+import "./ExpenseItem.css";
 const ExpenseItem = (props) => {
    let{
     title = ' ',
     amount = 0,
     date = new Date()
    } = props;
+
    return(
     <div className="expense-item">
         <ExpenseDate date={date}/>

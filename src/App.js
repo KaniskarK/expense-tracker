@@ -1,6 +1,6 @@
 import './App.css';
 // import Expenses from './components/expenses/Expenses';
-import Expenses from './components/expenses/Expenses';
+import Expenses from './components/expenses/Expenses'
 
 function App() {
   const DUMMY_DATA = [
